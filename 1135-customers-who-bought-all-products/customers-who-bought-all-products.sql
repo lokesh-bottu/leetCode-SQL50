@@ -1,0 +1,3 @@
+# Write your MySQL query statement below
+SELECT CUSTOMER_ID FROM Customer 
+group by CUSTOMER_ID HAVING COUNT(DISTINCT PRODUCT_KEY) = (SELECT COUNT(1) FROM Product)
